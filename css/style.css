@@ -971,9 +971,6 @@ body::after {
   content: "";
   position: absolute
 }
-.projects__items--mobile {
-  display: block!important
-}
 .projects__wrapper:not(:last-child) {
   padding-bottom: 6.1875rem;
   border-bottom: rgba(255,255,255,.1) solid .09375rem
@@ -2007,6 +2004,9 @@ body::after {
   }
   .projects__items {
     display: none
+  }
+  .projects__items--mobile {
+    display: block
   }
   .clients__items {
     gap: 0;
