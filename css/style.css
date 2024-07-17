@@ -386,9 +386,8 @@ body::after {
   content: "";
   width: 5.5rem;
   aspect-ratio: 1/1;
-  background: url(../img/popup/image-mobile.svg) no-repeat center/100%
-}
-.popup__body::before:not(:last-child) {
+  align-self: self-start;
+  background: url(../img/popup/image-mobile.svg) no-repeat center/100%;
   margin-bottom: 1.375rem
 }
 .popup__body--gratitude {
