@@ -6,8 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240717171910" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20240717171910">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240718135332" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20240718135332">
 
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
@@ -24,7 +24,7 @@
 				<div class="header__logo">
 					<img src="img/header/logo.svg" alt="Logo" class="ibg ibg--contain">
 				</div>
-				<button data-popup="#contact-popup" data-da=".menu__container, 767.98" class="header__popup-btn">contact
+				<button data-da=".header__container, 767.98, 1" data-popup="#contact-popup" class="header__popup-btn">contact
 					<span>us</span></button>
 			</div>
 		</header>
@@ -53,6 +53,7 @@
 						<a href="#" class="social__link _icon-s-watsapp"></a>
 						<a href="#" class="social__link _icon-s-linkedin"></a>
 					</div>
+					<button data-popup="#contact-popup" class="menu__popup-btn">contact us</button>
 				</div>
 			</nav>
 		</div>
@@ -149,20 +150,20 @@
 							</div>
 						</div>
 					</div>
-					<div data-watch class="about__counters counters-about">
-						<div class="counters-about__col">
+					<div class="about__counters counters-about">
+						<div data-watch data-watch-once class="counters-about__col">
 							<div class="counters-about__label">
 								<span data-digits-counter>70</span>+<br>specialists
 							</div>
 						</div>
-						<div class="counters-about__col counters-about__col--right-mob">
+						<div data-watch data-watch-once class="counters-about__col counters-about__col--right-mob">
 							<div class="counters-about__label counters-about__label--white">
 								<span data-digits-counter>50</span>+<br>current<br>clients
 							</div>
 						</div>
-						<div class="counters-about__col">
+						<div data-watch data-watch-once class="counters-about__col">
 							<div class="counters-about__label">
-								<span data-digits-counter>4</span>+<br>countries
+								<span data-digits-counter>4</span> countries
 							</div>
 						</div>
 					</div>
@@ -817,6 +818,7 @@
 					<div class="contact__body">
 						<div class="contact__header">
 							<h2 class="contact__title">We build - <span>So you can build</span></h2>
+							<h2 class="contact__title contact__title--tablet">We<br>build - <span>So you can build</span></h2>
 						</div>
 
 						<form data-dev data-popup-message="#gratitude-popup" action="#" method="post" enctype="multipart/form-data" class="contact__form">
@@ -827,7 +829,7 @@
 						</form>
 					</div>
 					<div class="contact__right">
-						<div data-da=".contact__header, 991.98" class="contact__image">
+						<div data-da=".contact__header, 767.98" class="contact__image">
 							<img src="img/popup/image-mobile.svg" alt="Image" class="ibg ibg--contain">
 						</div>
 						<div class="contact__social social">
@@ -855,7 +857,8 @@
 							Tel.No. +971 52 960 39 20
 						</a>
 					</div>
-					<div class="footer__copy">@ams agency 2024. All rights reserved.</div>
+					<div data-da=".footer__col:last-child, 767.98, last" class="footer__copy">@ams agency 2024. All rights reserved.
+					</div>
 				</div>
 				<div class="footer__col">
 					<a href="#" class="footer__button-link">show on map</a>
@@ -864,8 +867,8 @@
 		</div>
 	</footer>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240717171910"></script>
-	<script src="js/app.min.js?_v=20240717171910"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240718135332"></script>
+	<script src="js/app.min.js?_v=20240718135332"></script>
 </body>
 
 </html>

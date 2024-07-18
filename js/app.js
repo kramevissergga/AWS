@@ -210,7 +210,6 @@
                 if (showMoreType === "items") {
                     const showMoreTypeValue = showMoreContent.dataset.showmoreContent ? showMoreContent.dataset.showmoreContent : 3;
                     const showMoreItems = showMoreContent.children;
-                    console.log(showMoreItems[0].offsetHeight);
                     for (let index = 1; index < showMoreItems.length; index++) {
                         const showMoreItem = showMoreItems[index - 1];
                         const marginTop = parseFloat(getComputedStyle(showMoreItem).marginTop) ? parseFloat(getComputedStyle(showMoreItem).marginTop) : 0;
