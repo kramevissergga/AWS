@@ -673,10 +673,6 @@ body::after {
   color: #ff5b1d;
   transition: all .3s
 }
-.menu-open .header__popup-btn {
-  opacity: 0;
-  visibility: hidden
-}
 :root {
   --header-height: 6.5rem
 }
@@ -1081,6 +1077,9 @@ body::after {
 .item-projects__body {
   padding-top: 4.625rem
 }
+.item-projects__header:not(:last-child) {
+  margin-bottom: 5.625rem
+}
 .item-projects__row {
   display: flex;
   align-items: end;
@@ -1364,17 +1363,20 @@ body::after {
   background-color: #fff
 }
 .contact__title {
+  text-wrap: nowrap;
   color: #000;
-  font-weight: 600
+  font-weight: 600;
+  font-size: 8rem
 }
 .contact__title > span {
-  color: #ff5b1d
+  color: #ff5b1d;
+  display: block;
+  text-wrap: wrap
 }
 .contact__title--tablet {
   padding-right: 6.25rem
 }
 .contact__title--tablet span {
-  display: block;
   margin-right: calc(-27.647059% + .625rem)
 }
 .contact__field {
@@ -1738,9 +1740,6 @@ body::after {
   .item-projects__body {
     padding-left: 5.125rem
   }
-  .item-projects__header:not(:last-child) {
-    margin-bottom: 5.625rem
-  }
   .item-projects__title {
     font-size: 4rem
   }
@@ -1755,9 +1754,6 @@ body::after {
   }
   .contact__header:not(:last-child) {
     margin-bottom: 4.6875rem
-  }
-  .contact__title {
-    font-size: 8rem
   }
   .contact__right {
     padding-left: 11rem
@@ -1868,6 +1864,30 @@ body::after {
     margin-bottom: 2.75rem
   }
 }
+@media (max-width:79.06125em) {
+  .menu__list {
+    gap: .625rem
+  }
+  .about-slider {
+    max-width: 43.75rem
+  }
+  .about-slider-thumb {
+    -webkit-transform: translateY(-6.25rem);
+    transform: translateY(-6.25rem)
+  }
+  .item-projects__body {
+    padding-top: 3.75rem
+  }
+  .item-projects__header:not(:last-child) {
+    margin-bottom: 2.8125rem
+  }
+  .item-projects__text {
+    font-size: 1.375rem
+  }
+  .contact__title {
+    font-size: 6.25rem
+  }
+}
 @media (max-width:61.99875em) {
   .services__title:not(:last-child) {
     margin-bottom: 2.0625rem
@@ -1948,6 +1968,10 @@ body::after {
   }
   .header__logo img {
     max-width: 7rem
+  }
+  .menu-open .header__popup-btn {
+    opacity: 0;
+    visibility: hidden
   }
   :root {
     --header-height: 4.425rem
@@ -2041,9 +2065,6 @@ body::after {
   }
   .contact__header {
     position: relative
-  }
-  .contact__title {
-    font-size: 6.25rem
   }
   .contact__title {
     display: inline-block
@@ -2454,16 +2475,6 @@ body::after {
       padding-left: calc(1.875rem + 3.25 * (100vw - 47.99875rem)/ 30.62625)
     }
   }
-  @supports (margin-bottom:clamp(2.8125rem ,-1.5953685564rem + 9.1832986409vw ,5.625rem)) {
-    .item-projects__header:not(:last-child) {
-      margin-bottom: clamp(2.8125rem ,-1.5953685564rem + 9.1832986409vw ,5.625rem)
-    }
-  }
-  @supports not (margin-bottom:clamp(2.8125rem ,-1.5953685564rem + 9.1832986409vw ,5.625rem)) {
-    .item-projects__header:not(:last-child) {
-      margin-bottom: calc(2.8125rem + 2.8125 * (100vw - 47.99875rem)/ 30.62625)
-    }
-  }
   @supports (font-size:clamp(2.5rem ,0.1491367699rem + 4.8977592751vw ,4rem)) {
     .item-projects__title {
       font-size: clamp(2.5rem ,.1491367699rem + 4.8977592751vw ,4rem)
@@ -2482,16 +2493,6 @@ body::after {
   @supports not (margin-bottom:clamp(1.875rem ,-1.0635790376rem + 6.1221990939vw ,3.75rem)) {
     .item-projects__text:not(:last-child) {
       margin-bottom: calc(1.875rem + 1.875 * (100vw - 47.99875rem)/ 30.62625)
-    }
-  }
-  @supports (font-size:clamp(6.25rem ,3.5073262316rem + 5.7140524877vw ,8rem)) {
-    .contact__title {
-      font-size: clamp(6.25rem ,3.5073262316rem + 5.7140524877vw ,8rem)
-    }
-  }
-  @supports not (font-size:clamp(6.25rem ,3.5073262316rem + 5.7140524877vw ,8rem)) {
-    .contact__title {
-      font-size: calc(6.25rem + 1.75 * (100vw - 47.99875rem)/ 30.62625)
     }
   }
   @supports (padding-left:clamp(5.625rem ,-2.7989265744rem + 17.5503040692vw ,11rem)) {
