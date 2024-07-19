@@ -1591,7 +1591,7 @@ body::after {
     gap: .625rem
   }
   .menu__item {
-    font-size: 2.8125rem
+    font-size: 2.8125rem!important
   }
   .item-projects__body {
     padding-top: 3.75rem
@@ -1603,24 +1603,17 @@ body::after {
     font-size: 1.375rem
   }
   .item-projects__text:not(:last-child) {
-    margin-bottom: 1.875rem
+    margin-bottom: 1.875rem!important
   }
 }
 @media (min-width:47.99875em) and (max-height:40.625em) {
   .menu__item {
-    font-size: 2.5rem
+    font-size: 2.5rem!important
   }
 }
-@media (min-width:47.99875em) and (max-height:43.75em) {
+@media (min-width:47.99875em) and (max-height:46.25em) {
   .about__text {
-    font-size: 1.875rem
-  }
-  .item-projects__image {
-    flex: 0 0 40.768473%;
-    padding-right: 5.1%
-  }
-  .item-projects__title {
-    font-size: 2.5rem
+    font-size: 1.875rem!important
   }
 }
 @media (min-width:47.99875em) and (max-height:55em) {
@@ -1630,6 +1623,15 @@ body::after {
   .about-slider-thumb {
     -webkit-transform: translateY(-6.25rem);
     transform: translateY(-6.25rem)
+  }
+}
+@media (min-width:47.99875em) and (max-height:43.75em) {
+  .item-projects__image {
+    flex: 0 0 40.768473%;
+    padding-right: 5.1%
+  }
+  .item-projects__title {
+    font-size: 2.5rem!important
   }
 }
 @media (min-width:47.99875em) and (max-height:37.5em) {
@@ -1642,7 +1644,7 @@ body::after {
 }
 @media (min-width:47.99875em) and (max-height:41.875em) {
   .contact__title {
-    font-size: 6.25rem
+    font-size: 6.25rem!important
   }
 }
 @media (min-width:61.99875em) {
