@@ -2021,6 +2021,10 @@ body::after {
     margin-left: 1.25rem;
     margin-right: 1.25rem
   }
+  .about-slider-thumb {
+    -webkit-transform: translateY(-4.1875rem);
+    transform: translateY(-4.1875rem)
+  }
   .about-slider-thumb .swiper-wrapper {
     padding-top: 1.875rem;
     padding-bottom: 0
