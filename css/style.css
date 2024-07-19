@@ -189,6 +189,7 @@ body {
 }
 .menu__body {
   overflow: auto;
+  scrollbar-width: thin;
   flex-grow: 1;
   display: flex;
   flex-direction: column
@@ -1581,6 +1582,69 @@ body::after {
     display: none
   }
 }
+@media (min-width:47.99875em) and (max-height:46.875em) {
+  .menu__container {
+    padding-top: 1.8125rem;
+    padding-bottom: 2.125rem
+  }
+  .menu__list {
+    gap: .625rem
+  }
+  .menu__item {
+    font-size: 2.8125rem
+  }
+  .item-projects__body {
+    padding-top: 3.75rem
+  }
+  .item-projects__header:not(:last-child) {
+    margin-bottom: 2.8125rem
+  }
+  .item-projects__text {
+    font-size: 1.375rem
+  }
+  .item-projects__text:not(:last-child) {
+    margin-bottom: 1.875rem
+  }
+}
+@media (min-width:47.99875em) and (max-height:40.625em) {
+  .menu__item {
+    font-size: 2.5rem
+  }
+}
+@media (min-width:47.99875em) and (max-height:43.75em) {
+  .about__text {
+    font-size: 1.875rem
+  }
+  .item-projects__image {
+    flex: 0 0 40.768473%;
+    padding-right: 5.1%
+  }
+  .item-projects__title {
+    font-size: 2.5rem
+  }
+}
+@media (min-width:47.99875em) and (max-height:55em) {
+  .about-slider {
+    max-width: 43.75rem
+  }
+  .about-slider-thumb {
+    -webkit-transform: translateY(-6.25rem);
+    transform: translateY(-6.25rem)
+  }
+}
+@media (min-width:47.99875em) and (max-height:37.5em) {
+  .item-projects__body {
+    padding-top: 2.5rem
+  }
+  .item-projects__header:not(:last-child) {
+    margin-bottom: 2.1875rem
+  }
+}
+@media (min-width:47.99875em) and (max-height:41.875em) {
+  .contact__title {
+    font-size: 6.25rem
+  }
+}
 @media (min-width:61.99875em) {
   .services__title {
     padding-bottom: 3.625rem;
@@ -1862,30 +1926,6 @@ body::after {
   }
   .contact__header:not(:last-child) {
     margin-bottom: 2.75rem
-  }
-}
-@media (max-width:79.06125em) {
-  .menu__list {
-    gap: .625rem
-  }
-  .about-slider {
-    max-width: 43.75rem
-  }
-  .about-slider-thumb {
-    -webkit-transform: translateY(-6.25rem);
-    transform: translateY(-6.25rem)
-  }
-  .item-projects__body {
-    padding-top: 3.75rem
-  }
-  .item-projects__header:not(:last-child) {
-    margin-bottom: 2.8125rem
-  }
-  .item-projects__text {
-    font-size: 1.375rem
-  }
-  .contact__title {
-    font-size: 6.25rem
   }
 }
 @media (max-width:61.99875em) {
