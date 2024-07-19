@@ -1613,7 +1613,10 @@ body::after {
 }
 @media (min-width:47.99875em) and (max-height:46.25em) {
   .about__text {
-    font-size: 1.875rem!important
+    font-size: 1.875rem!important;
+    max-width: 31.25rem;
+    margin-right: 6.25rem;
+    margin-bottom: -6.375rem
   }
 }
 @media (min-width:47.99875em) and (max-height:55em) {
