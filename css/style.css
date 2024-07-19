@@ -912,7 +912,6 @@ body::after {
   display: flex;
   justify-items: start;
   flex-wrap: wrap;
-  gap: 1.25rem;
   max-width: 68.75rem
 }
 .services__col {
@@ -938,7 +937,11 @@ body::after {
   transition: all .3s
 }
 .services__wrapper {
-  position: relative
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  max-width: 120rem
 }
 .services__image {
   aspect-ratio: 767/470;
@@ -1105,7 +1108,8 @@ body::after {
 }
 .item-projects__title {
   flex-grow: 1;
-  font-weight: 600
+  font-weight: 600;
+  line-height: .8
 }
 .item-projects__text {
   font-size: 1.5rem;
@@ -1791,6 +1795,9 @@ body::after {
   .services__title {
     font-size: 6rem
   }
+  .services__items {
+    gap: 3.125rem
+  }
   .projects__title {
     font-size: 6rem
   }
@@ -1938,6 +1945,9 @@ body::after {
     margin-bottom: 2.0625rem
   }
   .services__items {
+    gap: 1.25rem
+  }
+  .services__items {
     row-gap: 4.3125rem
   }
   .services__item svg {
@@ -2083,6 +2093,9 @@ body::after {
   }
   .services__title {
     font-size: 4rem
+  }
+  .services__items {
+    flex-direction: column
   }
   .services__link {
     display: none
@@ -2552,6 +2565,18 @@ body::after {
   @supports not (padding-left:clamp(5.625rem ,-2.7989265744rem + 17.5503040692vw ,11rem)) {
     .contact__right {
       padding-left: calc(5.625rem + 5.375 * (100vw - 47.99875rem)/ 30.62625)
+    }
+  }
+}
+@media (min-width:61.99875em) and (max-width:78.625em) {
+  @supports (gap:clamp(1.25rem ,-5.7418145252rem + 11.2773475679vw ,3.125rem)) {
+    .services__items {
+      gap: clamp(1.25rem ,-5.7418145252rem + 11.2773475679vw ,3.125rem)
+    }
+  }
+  @supports not (gap:clamp(1.25rem ,-5.7418145252rem + 11.2773475679vw ,3.125rem)) {
+    .services__items {
+      gap: calc(1.25rem + 1.875 * (100vw - 61.99875rem)/ 16.62625)
     }
   }
 }
